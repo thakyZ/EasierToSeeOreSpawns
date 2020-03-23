@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PlanetGeneratorDefinitions>
+    <PlanetGeneratorDefinition>
+      <Id>
+        <TypeId>PlanetGeneratorDefinition</TypeId>
+        <SubtypeId>Jericu</SubtypeId>
+      </Id>
+      <PlanetMaps Material="true" Ores="true" Biome="false" Occlusion="true"/>
+
+      <SurfaceDetail>
+        <Texture>Data/PlanetDataFiles/Extra/material_detail_2</Texture>
+        <Size>384</Size>
+        <Scale>6</Scale>
+        <Slope Min="14" Max="90"/>
+        <Transition>7.5</Transition>
+      </SurfaceDetail>
+
+      <DistortionTable>
+        <Distortion Type="Perlin" Value="92" Frequency="10" Height="4" LayerCount="6"/>
+      </DistortionTable>
+
+      <OreMappings>
+        <!--!INSERT ONLY IN BLUE CHANNEL on MaterialTexture -->
+        <!-- Tier 1-->
+        <Ore Value="200" Type="Iron_02" Start="3" Depth="7" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="220" Type="Nickel_01" Start="3" Depth="7" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="240" Type="Silicon_01" Start="3" Depth="7" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- Fe 1-->
+        <Ore Value="1" Type="Iron_02" Start="10" Depth="3" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="4" Type="Iron_02" Start="12" Depth="3" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="8" Type="Iron_02" Start="14" Depth="4" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- Fe 2-->
+        <Ore Value="12" Type="Iron_02" Start="25" Depth="5" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="16" Type="Iron_02" Start="28" Depth="5" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="20" Type="Iron_02" Start="31" Depth="8" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- Ni 1-->
+        <Ore Value="24" Type="Nickel_01" Start="10" Depth="4" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="28" Type="Nickel_01" Start="11" Depth="4" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="32" Type="Nickel_01" Start="11" Depth="6" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- Ni 2-->
+        <Ore Value="36" Type="Nickel_01" Start="24" Depth="5" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="40" Type="Nickel_01" Start="27" Depth="5" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="44" Type="Nickel_01" Start="30" Depth="8" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- Si 1-->
+        <Ore Value="48" Type="Silicon_01" Start="9" Depth="4" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="52" Type="Silicon_01" Start="13" Depth="4" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="56" Type="Silicon_01" Start="10" Depth="6" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- Si 2-->
+        <Ore Value="60" Type="Silicon_01" Start="22" Depth="6" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="64" Type="Silicon_01" Start="25" Depth="7" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="68" Type="Silicon_01" Start="27" Depth="9" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- ORE Tier 2 -->
+        <!-- Co 1-->
+        <Ore Value="72" Type="Cobalt_01" Start="20" Depth="3" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="76" Type="Cobalt_01" Start="22" Depth="4" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="80" Type="Cobalt_01" Start="26" Depth="6" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- Co 2-->
+        <Ore Value="84" Type="Cobalt_01" Start="52" Depth="5" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="88" Type="Cobalt_01" Start="55" Depth="6" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="92" Type="Cobalt_01" Start="62" Depth="9" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- Ag 1-->
+        <Ore Value="96" Type="Silver_01" Start="21" Depth="3" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="100" Type="Silver_01" Start="25" Depth="3" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="104" Type="Silver_01" Start="31" Depth="5" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- Ag 2-->
+        <Ore Value="108" Type="Silver_01" Start="55" Depth="8" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="112" Type="Silver_01" Start="58" Depth="9" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="116" Type="Platinum_01" Start="63" Depth="11" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- Mg 1-->
+        <Ore Value="120" Type="Magnesium_01" Start="23" Depth="4" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="124" Type="Magnesium_01" Start="26" Depth="4" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="128" Type="Magnesium_01" Start="29" Depth="5" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- Mg 2-->
+        <Ore Value="132" Type="Magnesium_01" Start="53" Depth="7" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="136" Type="Magnesium_01" Start="55" Depth="8" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="140" Type="Magnesium_01" Start="59" Depth="10" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- ORE Tier 3 -->
+        <!-- U 1-->
+        <Ore Value="144" Type="Uraninite_01" Start="32" Depth="2" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="148" Type="Uraninite_01" Start="35" Depth="3" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="152" Type="Uraninite_01" Start="38" Depth="5" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- U 2-->
+        <Ore Value="156" Type="Uraninite_01" Start="80" Depth="8" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="160" Type="Uraninite_01" Start="89" Depth="9" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="164" Type="Uraninite_01" Start="96" Depth="11" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- Au 1-->
+        <Ore Value="168" Type="Gold_01" Start="40" Depth="1" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="172" Type="Gold_01" Start="42" Depth="2" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="176" Type="Gold_01" Start="45" Depth="3" TargetColor="#FFFFFF" ColorInfluence="90"/>
+
+        <!-- Au 2-->
+        <Ore Value="180" Type="Gold_01" Start="100" Depth="4" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="184" Type="Gold_01" Start="107" Depth="5" TargetColor="#FFFFFF" ColorInfluence="90"/>
+        <Ore Value="188" Type="Platinum_01" Start="112" Depth="8" TargetColor="#FFFFFF" ColorInfluence="90"/>
+      </OreMappings>
+
+      <SoundRules>
+        <SoundRule>
+          <Height Min="0" Max="0.42"/>
+          <Latitude Min="0" Max="90"/>
+          <SunAngleFromZenith Min="0" Max="180"/>
+          <EnvironmentSound>AmbPoleDay</EnvironmentSound>
+        </SoundRule>
+
+        <SoundRule>
+          <Height Min="0.42" Max="1.2"/>
+          <Latitude Min="0" Max="90"/>
+          <SunAngleFromZenith Min="0" Max="180"/>
+          <EnvironmentSound>AmbHigh</EnvironmentSound>
+        </SoundRule>
+      </SoundRules>
+
+      <ComplexMaterials>
+        <MaterialGroup Name="Planet Features" Value="0">
+
+          <Rule>
+            <Layers>
+              <Layer Material="JericuSnow" Depth="3"/>
+              <Layer Material="JericuIce" Depth="29"/>
+              <Layer Material="JericuRock" Depth="3"/>
+            </Layers>
+            <Height Min="0" Max="1"/>
+            <Latitude Min="0" Max="90"/>
+            <Slope Min="0" Max="16"/>
+          </Rule>
+
+          <Rule>
+            <Layers>
+              <Layer Material="JericuIce" Depth="32"/>
+              <Layer Material="JericuRock" Depth="3"/>
+            </Layers>
+            <Height Min="0" Max="1"/>
+            <Latitude Min="0" Max="90"/>
+            <Slope Min="16" Max="32"/>
+          </Rule>
+
+          <Rule>
+            <Layers>
+              <Layer Material="JericuRock" Depth="3"/>
+            </Layers>
+            <Height Min="0" Max="1"/>
+            <Latitude Min="0" Max="90"/>
+            <Slope Min="32" Max="90"/>
+          </Rule>
+
+        </MaterialGroup>
+      </ComplexMaterials>
+
+      <EnvironmentItems>
+        <Item>
+          <Biomes>
+            <Biome>0</Biome>
+          </Biomes>
+          <Materials>
+            <Material>JericuSnow</Material>
+          </Materials>
+          <Items>
+            <Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" GroupId="SnowCoverageIronCore" ModifierId="JericuIce" Density="0.0064"/>
+          </Items>
+          <Rule>
+            <Height Min="0" Max="1"/>
+            <Latitude Min="0" Max="90"/>
+            <Slope Min="0" Max="90"/>
+          </Rule>
+        </Item>
+      </EnvironmentItems>
+
+      <DefaultSurfaceMaterial Material="JericuSnow" MaxDepth="4"/>
+      <DefaultSubSurfaceMaterial Material="JericuSubRock"/>
+
+      <HasAtmosphere>true</HasAtmosphere>
+      <MaximumOxygen>0.9</MaximumOxygen>
+      <Atmosphere>
+        <MaxWindSpeed>80</MaxWindSpeed>
+        <Breathable>false</Breathable>
+        <OxygenDensity>0.12</OxygenDensity>
+        <Density>2.8</Density>
+        <LimitAltitude>2.0</LimitAltitude>
+      </Atmosphere>
+
+      <!-- <AtmosphereSettings> <RayleighScattering> <X>13.616</X> <Y>15.515</Y> <Z>16.328</Z> </RayleighScattering> <MieScattering>150</MieScattering> <MieColorScattering> <X>150</X> <Y>150</Y> <Z>70.239</Z> </MieColorScattering>
+      <RayleighHeight>5</RayleighHeight> <RayleighHeightSpace>8.7</RayleighHeightSpace> <RayleighTransitionModifier>1.0</RayleighTransitionModifier> <MieHeight>15.0</MieHeight> <MieG>0.999</MieG> <SeaLevelModifier>0.96</SeaLevelModifier>
+      <AtmosphereTopModifier>1.0</AtmosphereTopModifier> <Intensity>20</Intensity> <FogIntensity>3.0</FogIntensity> <Scale>1</Scale> </AtmosphereSettings> -->
+
+      <AtmosphereSettings>
+        <RayleighScattering>
+          <X>18.9</X>
+          <Y>39</Y>
+          <Z>80</Z>
+        </RayleighScattering>
+        <MieScattering>50</MieScattering>
+        <MieColorScattering>
+          <X>20</X>
+          <Y>32</Y>
+          <Z>91</Z>
+        </MieColorScattering>
+        <RayleighHeight>30.160</RayleighHeight>
+        <RayleighHeightSpace>12.285</RayleighHeightSpace>
+        <RayleighTransitionModifier>0.4</RayleighTransitionModifier>
+        <MieHeight>30</MieHeight>
+        <MieG>0.99985</MieG>
+        <Intensity>32.097</Intensity>
+        <SeaLevelModifier>0.972</SeaLevelModifier>
+        <AtmosphereTopModifier>1.1</AtmosphereTopModifier>
+        <FogIntensity>3</FogIntensity>
+        <Scale>1</Scale>
+      </AtmosphereSettings>
+
+      <CloudLayers>
+        <CloudLayer>
+          <!-- Far layer -->
+          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+          <Textures>
+            <Texture>Textures/Models/Environment/Sky/JericuClouds.dds</Texture>
+          </Textures>
+          <RelativeAltitude>1.05</RelativeAltitude>
+          <RotationAxis>
+            <X>-0.2</X>
+            <Y>1</Y>
+            <Z>0.2</Z>
+          </RotationAxis>
+          <AngularVelocity>0.0002</AngularVelocity>
+          <InitialRotation>1.2</InitialRotation>
+          <ScalingEnabled>false</ScalingEnabled>
+          <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
+          <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+          <ApplyFogRelativeDistance>0.1</ApplyFogRelativeDistance>
+        </CloudLayer>
+        <CloudLayer>
+          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+          <Textures>
+            <Texture>Textures/Models/Environment/Sky/JericuClouds.dds</Texture>
+          </Textures>
+          <RelativeAltitude>1.04</RelativeAltitude>
+          <RotationAxis>
+            <X>-0.2</X>
+            <Y>0.2</Y>
+            <Z>1</Z>
+          </RotationAxis>
+          <AngularVelocity>0.0002</AngularVelocity>
+          <InitialRotation>3.2</InitialRotation>
+          <ScalingEnabled>false</ScalingEnabled>
+          <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
+          <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+          <ApplyFogRelativeDistance>0.05</ApplyFogRelativeDistance>
+        </CloudLayer>
+        <CloudLayer>
+          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+          <Textures>
+            <Texture>Textures/Models/Environment/Sky/JericuClouds.dds</Texture>
+          </Textures>
+          <RelativeAltitude>1.03</RelativeAltitude>
+          <RotationAxis>
+            <X>-0.2</X>
+            <Y>0.2</Y>
+            <Z>1</Z>
+          </RotationAxis>
+          <AngularVelocity>0.0002</AngularVelocity>
+          <InitialRotation>5.2</InitialRotation>
+          <ScalingEnabled>false</ScalingEnabled>
+          <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
+          <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+          <ApplyFogRelativeDistance>0.05</ApplyFogRelativeDistance>
+        </CloudLayer>
+        <CloudLayer>
+          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+          <Textures>
+            <Texture>Textures/Models/Environment/Sky/JericuClouds.dds</Texture>
+          </Textures>
+          <RelativeAltitude>1.02</RelativeAltitude>
+          <RotationAxis>
+            <X>-0.2</X>
+            <Y>0.2</Y>
+            <Z>1</Z>
+          </RotationAxis>
+          <AngularVelocity>0.0002</AngularVelocity>
+          <InitialRotation>5.2</InitialRotation>
+          <ScalingEnabled>false</ScalingEnabled>
+          <FadeOutRelativeAltitudeStart>3.0</FadeOutRelativeAltitudeStart>
+          <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+          <ApplyFogRelativeDistance>0.05</ApplyFogRelativeDistance>
+        </CloudLayer>
+
+        <!-- Near layers -->
+        <CloudLayer>
+          <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+          <Textures>
+            <Texture>Textures/Models/Environment/Sky/JericuClouds.dds</Texture>
+          </Textures>
+          <RelativeAltitude>2.4</RelativeAltitude>
+          <RotationAxis>
+            <X>0</X>
+            <Y>1</Y>
+            <Z>0</Z>
+          </RotationAxis>
+          <AngularVelocity>0.0006</AngularVelocity>
+          <InitialRotation>0.15</InitialRotation>
+          <ScalingEnabled>false</ScalingEnabled>
+          <FadeOutRelativeAltitudeStart>0.5</FadeOutRelativeAltitudeStart>
+          <FadeOutRelativeAltitudeEnd>1.6</FadeOutRelativeAltitudeEnd>
+        </CloudLayer>
+      </CloudLayers>
+
+      <SurfaceGravity>1.2</SurfaceGravity>
+      <MaterialsMaxDepth Min="4000" Max="4000"/>
+      <MaterialsMinDepth Min="20" Max="20"/>
+
+      <HillParams Min="-0.03" Max="0.03"/>
+
+    </PlanetGeneratorDefinition>
+
+  </PlanetGeneratorDefinitions>
+</Definitions>
